@@ -3,7 +3,7 @@ var creds = require('./client_secret.json')
 var doc = new GoogleSpreadsheet('1D7CvKvJ0o6Wy8ZxZx3Oj4RfwqUaVBs-ueWC6xWZ9-_8');
 var newquerydoc= new GoogleSpreadsheet('1tHDGG321U79-kzzE1OMQ17fi-OXcbJdnxv5FzVEztfU');
 var AdminworkplaceId= 100039033136879
-var acronym="";
+var tag="";
 var meaning="";
 var know_more="";
 var related_links="";
@@ -40,7 +40,7 @@ module.exports = function(graph_api){
             doc.getRows(1, function (err, rows) {
                 console.log("console message")
                 rows.forEach(function (rowValue) {
-                    eachRow.set(rowValue.acronym, rowValue.index)
+                    eachRow.set(rowValue.tag, rowValue.index)
                     rowsval=rows;
                 })
             });
@@ -50,7 +50,7 @@ module.exports = function(graph_api){
         console.log(incoming_message)
 
         if(incoming_message.includes("Hey") || incoming_message.includes("Hello") || incoming_message.includes("Hi")){
-            this._sendMessage(senderID, "Hello !! I am the Acronym Bot. Please type any term that you dont know off and I can help you get more information on it :) " );
+            this._sendMessage(senderID, "Hello !! I am the Help Bot. Please type any term that you dont know off and I can help you get more information on it :) " );
         }
 
         else if(incoming_message.length > 0) {
@@ -65,7 +65,7 @@ module.exports = function(graph_api){
             if (eachRow.has(incoming_message)) {
                 console.log('item present in index ' + eachRow.get(incoming_message))
                 index = eachRow.get(incoming_message) - 1;
-                acronym = rowsval[index].acronym;
+                tag = rowsval[index].tag;
                 meaning = rowsval[index].meaning;
                 know_more = rowsval[index].def;
                 related_links = rowsval[index].more;
@@ -76,12 +76,12 @@ module.exports = function(graph_api){
             else {
                 this._sendMessage(senderID, "Sorry I did not find that one , But dont worry I have sent it to the admin for review. It will be updated soon. ");
 
-                this._sendMessage(AdminworkplaceId, "Hey Admin!! The Acronym bot just got a question called : " + incoming_message + "  \n which it does not know the answer for. Can you update the sheet with the meaning ?  \n Quick link : https://docs.google.com/spreadsheets/d/1D7CvKvJ0o6Wy8ZxZx3Oj4RfwqUaVBs-ueWC6xWZ9-_8/edit#gid=0 .. \n Dont worry if you want" +
+                this._sendMessage(AdminworkplaceId, "Hey Admin!! The Help bot just got a question called : " + incoming_message + "  \n which it does not know the answer for. Can you update the sheet with the meaning ?  \n Quick link : https://docs.google.com/spreadsheets/d/1D7CvKvJ0o6Wy8ZxZx3Oj4RfwqUaVBs-ueWC6xWZ9-_8/edit#gid=0 .. \n Dont worry if you want" +
                     "to do it later , i have saved the query here : https://docs.google.com/spreadsheets/d/1tHDGG321U79-kzzE1OMQ17fi-OXcbJdnxv5FzVEztfU/edit#gid=0");
 
 
                 newquerydoc.useServiceAccountAuth(creds, function (err) {
-                    newquerydoc.addRow(1, { acronym: incoming_message }, function(err) {
+                    newquerydoc.addRow(1, { tag: incoming_message }, function(err) {
                         if(err) {
                             console.log(err);
                         }
