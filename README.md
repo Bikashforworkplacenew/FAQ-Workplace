@@ -1,2 +1,2 @@
-# wp-Acronym Bot
-A sample Acronym bot for Workplace. It helps you to implement an acronym, FAQ bot by google spreadsheet or office excel sheets
+# Help@ Bot
+A sample help bot for Workplace which can act as an online admin answering questions it is asked by simply querying from a google or office 365 spreadSheet. 
