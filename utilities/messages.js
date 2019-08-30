@@ -11,6 +11,10 @@ var eachRow=new Map();
 var rowsval;
 
 
+require('dotenv').config();
+console.log(process.env.Google_sheet)
+
+
 
 module.exports = function(graph_api){
 
