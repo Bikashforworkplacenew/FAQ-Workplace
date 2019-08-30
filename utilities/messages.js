@@ -12,7 +12,7 @@ var rowsval;
 
 
 require('dotenv').config();
-console.log(process.env.Google_sheet)
+
 
 
 
@@ -55,6 +55,8 @@ module.exports = function(graph_api){
 
         if(incoming_message.includes("Hey") || incoming_message.includes("Hello") || incoming_message.includes("Hi")){
             this._sendMessage(senderID, "Hello !! I am the Help Bot. Please type any term that you dont know off and I can help you get more information on it :) " );
+
+            console.log(process.env.Google_sheet)
         }
 
         else if(incoming_message.length > 0) {
