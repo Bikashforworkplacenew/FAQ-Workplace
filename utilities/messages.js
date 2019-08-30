@@ -1,8 +1,6 @@
 var GoogleSpreadsheet = require('google-spreadsheet');
 var creds = require('./client_secret.json')
-var doc = new GoogleSpreadsheet('1D7CvKvJ0o6Wy8ZxZx3Oj4RfwqUaVBs-ueWC6xWZ9-_8');
-var newquerydoc= new GoogleSpreadsheet('1tHDGG321U79-kzzE1OMQ17fi-OXcbJdnxv5FzVEztfU');
-var AdminworkplaceId= 100039033136879
+
 var tag="";
 var meaning="";
 var know_more="";
@@ -13,6 +11,11 @@ var rowsval;
 
 require('dotenv').config();
 
+
+
+var doc = new GoogleSpreadsheet(process.env.Google_sheet_bot_queries);
+var newquerydoc= new GoogleSpreadsheet(process.env.Google_sheet_new_queries);
+var AdminworkplaceId= process.env.Admin_workplace_id;
 
 
 
@@ -56,7 +59,7 @@ module.exports = function(graph_api){
         if(incoming_message.includes("Hey") || incoming_message.includes("Hello") || incoming_message.includes("Hi")){
             this._sendMessage(senderID, "Hello !! I am the Help Bot. Please type any term that you dont know off and I can help you get more information on it :) " );
 
-            console.log(process.env.Google_sheet)
+            console.log()
         }
 
         else if(incoming_message.length > 0) {
