@@ -10,7 +10,7 @@ require('dotenv').config();
 
 var doc = new GoogleSpreadsheet('1tHDGG321U79-kzzE1OMQ17fi-OXcbJdnxv5FzVEztfU');
 
-
+console.log(process.env.Google_sheet)
 
 // Authenticate with the Google Spreadsheets API.
 doc.useServiceAccountAuth(creds, function (err) {
