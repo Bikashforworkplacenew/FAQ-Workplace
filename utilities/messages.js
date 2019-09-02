@@ -7,6 +7,7 @@ var know_more = "";
 var related_links = "";
 var eachRow = new Map();
 var rowsval;
+var found_word_flag=true;
 
 
 require('dotenv').config();
@@ -71,19 +72,59 @@ module.exports = function (graph_api) {
 
 
 
-                if (eachRow.has(incoming_message)) {
-                    console.log('item present in index ' + eachRow.get(incoming_message))
-                    index = eachRow.get(incoming_message) - 1;
-                    tag = rowsval[index].tag;
-                    meaning = rowsval[index].meaning;
-                    know_more = rowsval[index].def;
-                    related_links = rowsval[index].more;
+                each_word.forEach(function (element) {
 
-                    this._sendMessage(senderID, "Hey !! You want to know about  " + incoming_message + ". I can help with you that :)" + incoming_message + " is " + meaning + ". " + know_more + " . You can read more about it in this link :  " + related_links);
-                } else {
+
+
+                    if (eachRow.has(each_word)) {
+
+
+                        found_word_flag=true;
+
+                        console.log('item present in index ' + eachRow.get(incoming_message))
+                        index = eachRow.get(incoming_message) - 1;
+                        tag = rowsval[index].tag;
+                        meaning = rowsval[index].meaning;
+                        know_more = rowsval[index].def;
+                        related_links = rowsval[index].more;
+
+                        this._sendMessage(senderID, "Hey !! You want to know about  " + each_word + ". I can help with you that :)" + each_word
+                            + " is " + meaning + ". " + know_more + " . You can read more about it in this link :  " + related_links);
+
+                    }
+
+                    console.log(element);
+
+
+
+                })
+
+
+                // if (eachRow.has(each_word)) {
+                //
+                //
+                //     found_word_flag=true;
+                //
+                //     console.log('item present in index ' + eachRow.get(incoming_message))
+                //     index = eachRow.get(incoming_message) - 1;
+                //     tag = rowsval[index].tag;
+                //     meaning = rowsval[index].meaning;
+                //     know_more = rowsval[index].def;
+                //     related_links = rowsval[index].more;
+                //
+                //     this._sendMessage(senderID, "Hey !! You want to know about  " + incoming_message + ". I can help with you that :)" + incoming_message
+                //         + " is " + meaning + ". " + know_more + " . You can read more about it in this link :  " + related_links);
+                //
+                // }
+
+                if(!found_word_flag)
+
+                 {
                     this._sendMessage(senderID, "Sorry I did not find that one , But dont worry I have sent it to the admin for review. It will be updated soon. ");
 
-                    this._sendMessage(AdminworkplaceId, "Hey Admin!! The Help bot just got a question called : " + incoming_message + "  \n which it does not know the answer for. Can you update the sheet with the meaning ?  \n Quick link : https://docs.google.com/spreadsheets/d/1D7CvKvJ0o6Wy8ZxZx3Oj4RfwqUaVBs-ueWC6xWZ9-_8/edit#gid=0 .. \n Dont worry if you want" +
+                    this._sendMessage(AdminworkplaceId, "Hey Admin!! The Help bot just got a question called : " + incoming_message + "  \n which it does not know the answer for. " +
+                        "Can you update the sheet with the meaning ?  \n Quick link : https://docs.google.com/spreadsheets/d/1D7CvKvJ0o6Wy8ZxZx3Oj4RfwqUaVBs-ueWC6xWZ9-_8/edit#gid=0 .. \n " +
+                        "Dont worry if you want" +
                         "to do it later , i have saved the query here : https://docs.google.com/spreadsheets/d/1tHDGG321U79-kzzE1OMQ17fi-OXcbJdnxv5FzVEztfU/edit#gid=0");
 
 
