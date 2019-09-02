@@ -79,9 +79,8 @@ module.exports = function (graph_api) {
 
                     if (eachRow.has(element)) {
 
-
                         found_word_flag=true;
-                        found_word=element
+                        found_word=element;
 
                     }
 
@@ -112,7 +111,7 @@ module.exports = function (graph_api) {
                 {
 
                     console.log('item present in index ' + eachRow.get(found_word))
-                    index = eachRow.get(element) - 1;
+                    index = eachRow.get(found_word) - 1;
                     tag = rowsval[index].tag;
                     meaning = rowsval[index].meaning;
                     know_more = rowsval[index].def;
