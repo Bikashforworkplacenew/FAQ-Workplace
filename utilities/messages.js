@@ -63,7 +63,7 @@ module.exports = function (graph_api) {
 
             if (incoming_message.length < 3) {
 
-                this._sendMessage(senderID, "Sorry your message is too short for me to understand , please ensure input message spuld at least be 3 or more letters");
+                this._sendMessage(senderID, "Sorry your message is too short for me to understand , please ensure input message should at least be 3 or more letters");
 
 
             } else {
@@ -88,12 +88,12 @@ module.exports = function (graph_api) {
                         know_more = rowsval[index].def;
                         related_links = rowsval[index].more;
 
+                        this._sendMessage(senderID, "I got your word un excel");
+
                         this._sendMessage(senderID, "Hey !! You want to know about  " + element + ". I can help with you that :)" + element
                             + " is " + meaning + ". " + know_more + " . You can read more about it in this link :  " + related_links);
 
                     }
-
-                    console.log(element);
 
 
 
