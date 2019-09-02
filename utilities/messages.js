@@ -8,6 +8,7 @@ var related_links = "";
 var eachRow = new Map();
 var rowsval;
 var found_word_flag=true;
+var found_word="";
 
 
 require('dotenv').config();
@@ -80,24 +81,13 @@ module.exports = function (graph_api) {
 
 
                         found_word_flag=true;
-
-                        console.log('item present in index ' + eachRow.get(element))
-                        index = eachRow.get(element) - 1;
-                        tag = rowsval[index].tag;
-                        meaning = rowsval[index].meaning;
-                        know_more = rowsval[index].def;
-                        related_links = rowsval[index].more;
-
-                        this._sendMessage(senderID, "I got your word un excel");
-
-                        this._sendMessage(senderID, "Hey !! You want to know about  " + element + ". I can help with you that :)" + element
-                            + " is " + meaning + ". " + know_more + " . You can read more about it in this link :  " + related_links);
+                        found_word=element
 
                     }
 
-
-
                 })
+
+
 
 
                 // if (eachRow.has(each_word)) {
@@ -117,7 +107,23 @@ module.exports = function (graph_api) {
                 //
                 // }
 
-                if(!found_word_flag)
+                
+                if(found_word_flag)
+                {
+
+                    console.log('item present in index ' + eachRow.get(found_word))
+                    index = eachRow.get(element) - 1;
+                    tag = rowsval[index].tag;
+                    meaning = rowsval[index].meaning;
+                    know_more = rowsval[index].def;
+                    related_links = rowsval[index].more;
+
+                    this._sendMessage(senderID, "I got your word un excel");
+
+                    this._sendMessage(senderID, "Hey !! You want to know about  " + element + ". I can help with you that :)" + element
+                        + " is " + meaning + ". " + know_more + " . You can read more about it in this link :  " + related_links);
+                }
+            else
 
                  {
                     this._sendMessage(senderID, "Sorry I did not find that one , But dont worry I have sent it to the admin for review. It will be updated soon. ");
