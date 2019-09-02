@@ -74,7 +74,7 @@ module.exports = function (graph_api) {
 
                 each_word.forEach(function (element) {
 
-
+                    console.log("word is " + element)
 
                     if (eachRow.has(each_word)) {
 
