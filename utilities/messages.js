@@ -76,19 +76,19 @@ module.exports = function (graph_api) {
 
                     console.log("word is " + element)
 
-                    if (eachRow.has(each_word)) {
+                    if (eachRow.has(element)) {
 
 
                         found_word_flag=true;
 
-                        console.log('item present in index ' + eachRow.get(incoming_message))
-                        index = eachRow.get(incoming_message) - 1;
+                        console.log('item present in index ' + eachRow.get(element))
+                        index = eachRow.get(element) - 1;
                         tag = rowsval[index].tag;
                         meaning = rowsval[index].meaning;
                         know_more = rowsval[index].def;
                         related_links = rowsval[index].more;
 
-                        this._sendMessage(senderID, "Hey !! You want to know about  " + each_word + ". I can help with you that :)" + each_word
+                        this._sendMessage(senderID, "Hey !! You want to know about  " + element + ". I can help with you that :)" + element
                             + " is " + meaning + ". " + know_more + " . You can read more about it in this link :  " + related_links);
 
                     }
