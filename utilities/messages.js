@@ -107,7 +107,7 @@ module.exports = function (graph_api) {
                 //
                 // }
 
-                
+
                 if(found_word_flag)
                 {
 
@@ -120,7 +120,7 @@ module.exports = function (graph_api) {
 
                     this._sendMessage(senderID, "I got your word un excel");
 
-                    this._sendMessage(senderID, "Hey !! You want to know about  " + element + ". I can help with you that :)" + element
+                    this._sendMessage(senderID, "Hey !! You want to know about  " + found_word + ". I can help with you that :)" + found_word
                         + " is " + meaning + ". " + know_more + " . You can read more about it in this link :  " + related_links);
                 }
             else
