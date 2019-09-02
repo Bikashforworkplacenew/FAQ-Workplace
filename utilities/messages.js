@@ -69,6 +69,9 @@ module.exports = function (graph_api) {
 
             } else {
 
+                found_word_flag=false;
+                found_word="";
+
                 var each_word= incoming_message.split(" ");
 
 
