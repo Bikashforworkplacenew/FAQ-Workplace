@@ -135,13 +135,16 @@ module.exports = function (graph_api) {
                     Add the google sheet bot queries link and new query google sheet link
                      */
 
+                    this._sendMessage(AdminworkplaceId, "New Message ");
+
+
                     this._sendMessage(AdminworkplaceId, "Hey Admin!! The Help bot just got a question called : " + incoming_message + "  \n which it does not know the answer for. " +
                         "Can you update the sheet with the meaning ?  \n Quick link :"+ Google_sheet_bot_queries_link + " https://docs.google.com/spreadsheets/d/1D7CvKvJ0o6Wy8ZxZx3Oj4RfwqUaVBs-ueWC6xWZ9-_8/edit#gid=0 .. \n " +
                         "Dont worry if you want" +
                         "to do it later , i have saved the query here : "+newquerydoc_link);
 
 
-                    //Add the new query tag to the new sheet 
+                    //Add the new query tag to the new sheet
 
                     newquerydoc.useServiceAccountAuth(creds, function (err) {
                         newquerydoc.addRow(1, {tag: incoming_message}, function (err) {
