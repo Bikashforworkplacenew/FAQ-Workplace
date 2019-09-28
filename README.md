@@ -11,7 +11,7 @@ What can the bot be used for ?
 
 How does it work ? 
 
-https://github.com/Bikashforworkplacenew/rHelpBot-Workplace/workplace doc images/Screenshot 2019-08-28 at 2.30.22 PM.png|alt=octocat
+https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/helpbut_setup.png|alt=octocat
 
 [Image: Screenshot 2019-08-28 at 2.30.22 PM.png]
 
