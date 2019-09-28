@@ -25,7 +25,7 @@ require('dotenv').config(); //Configuration values like workplace ID, Google She
 
 var doc = new GoogleSpreadsheet(process.env.Google_sheet_bot_queries);
 var newquerydoc = new GoogleSpreadsheet(process.env.Google_sheet_new_queries);
-var AdminworkplaceId = process.env.Google_sheet_bot_queries_link;
+var AdminworkplaceId = process.env.Admin_workplace_id;
 var Google_sheet_bot_queries_link= process.env.Google_sheet_bot_queries_link;
 var newquerydoc_link= process.env.Google_sheet_new_queries_link;
 
@@ -134,10 +134,7 @@ module.exports = function (graph_api) {
                     Add the incoming message in the admin message
                     Add the google sheet bot queries link and new query google sheet link
                      */
-
-                    this._sendMessage(AdminworkplaceId, "New Message ");
-
-
+                    
                     this._sendMessage(AdminworkplaceId, "Hey Admin!! The Help bot just got a question called : " + incoming_message + "  \n which it does not know the answer for. " +
                         "Can you update the sheet with the meaning ?  \n Quick link :"+ Google_sheet_bot_queries_link + " https://docs.google.com/spreadsheets/d/1D7CvKvJ0o6Wy8ZxZx3Oj4RfwqUaVBs-ueWC6xWZ9-_8/edit#gid=0 .. \n " +
                         "Dont worry if you want" +
