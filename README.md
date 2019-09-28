@@ -13,7 +13,6 @@ How does it work ?
 
 ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/helpbut_setup.png)
 
-[Image: Screenshot 2019-08-28 at 2.30.22 PM.png]
 
 * Workplace Admin updates the google sheet with all the necessary information. The sheet can be accessed and updated by anyone (irrespective of their work background)
 * Workplace user queries the bot(@Help) for information about any specific topic
@@ -41,12 +40,15 @@ To programmatically access(which the Bot will do) your spreadsheet, you’ll nee
 * *Go to the Google APIs Console (https://console.developers.google.com/)*
 * *Create a new project*
 
-[Image: Screenshot 2019-09-10 at 12.49.14 PM.png]
+![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/create_project.png)
+
+
 
 * *Click Enable API. Search for and enable the Google Drive API.*
 
-[Image: enable API.png]
-[Image: enable API 2.png]
+![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/enable API.png.png)
+
+![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/enable API 2.png.png)
 
 
 * *Create credentials for a Web Server to access Application Data.*
