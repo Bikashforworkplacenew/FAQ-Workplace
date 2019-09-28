@@ -53,20 +53,23 @@ To programmatically access(which the Bot will do) your spreadsheet, you’ll nee
 
 * *Create credentials for a Web Server to access Application Data.*
 
-[Image: Screenshot 2019-09-10 at 12.53.42 PM.png]
+![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/choose_webserver.png)
 
 * *Name the service account and grant it a Project Role of Editor.*
 
-[Image: Screenshot 2019-09-10 at 1.04.46 PM.png]
+![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/account_key_setup.png)
 
 * *Download the JSON file.*
 
-[Image: Screenshot 2019-09-10 at 1.05.14 PM.png]
+
+![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/save_key.png)
 
 * *Copy the JSON file to your code directory and rename it to client_secret.json*
 * *Create a new google sheet and enter the queries/answers*
 
-[Image: Screenshot 2019-09-10 at 1.25.29 PM.png]
+
+![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/setup_googlesheet.png)
+
 *Index* - # of items in the sheet 
 *Tag - *Quick/easy look up for the user queries 
 *FAQ Question - * User queries for Bot
@@ -74,7 +77,8 @@ To programmatically access(which the Bot will do) your spreadsheet, you’ll nee
 
 * *Find the client_email inside client_secret.json. Back in your spreadsheet, click the Share button in the top right, and paste the client email into the People field to give it edit rights. Hit Send.*
 
-[Image: Screenshot 2019-09-10 at 1.50.53 PM.png]
+![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/share_sheet.png)
+
 
 Deployment/Code setup
 
@@ -87,39 +91,43 @@ Deployment/Code setup
         * Please modify/add the necessary details to this file
         * This is your config file which can be edited at any point of time 
         * It contains the google sheet ID/ google sheet links and Workplace_Admin_ID
-
-        * [Image: Screenshot 2019-09-28 at 12.30.25 PM.png]
+        
+        ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/environment_variable.png)
+        
     * *messages.js (HelpBot-Workplace/utilities/messages.js)[*OPTIONAL*]*
         * Most Important : Make sure to get the columns names right from the spreadsheet set up 
 
 e.g. in here the column names (“meaning”,“def”) is same as the ones being extracted in the code
-[Image: Screenshot 2019-09-28 at 12.16.46 PM.png]
-[Image: Screenshot 2019-09-28 at 12.18.27 PM.png]
 
+ ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/botqueries_column.png)
+ ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/column_code.png)
+        
         * You can add your own welcome message 
 
-[Image: Screenshot 2019-09-28 at 12.21.29 PM.png]
+ ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/intro_mesage.png)
 
         * Add the necessary aesthetics checks 
 
-[Image: Screenshot 2019-09-28 at 12.22.27 PM.png]
+
+ ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/aesthetic_check.png)
 
         * Add your own custom admin message in case any query from the sender is not found 
 * After making the changes you can deploy the code in any web server 
 * In this example I have used Heroku to deploy my code and make all the configuration 
     * You can create a new app in Heroku
+    
 
-[Image: Screenshot 2019-09-28 at 5.45.07 PM.png]
+ ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/heroku_newapp.png)
 
 
 * As my code is pushed to Github, i am choosing github account project 
 
-[Image: Screenshot 2019-09-28 at 5.45.21 PM.png]
+ ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/connect_github.png)
 
 
 * Make sure you “Enable Automatic Deploys” after deploying branch
 
-[Image: Screenshot 2019-09-28 at 5.47.13 PM.png]
+ ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/auto_deploy.png)
 
 * There is one final step that you need to do which we will complete after the Workplace Setup 
 
