@@ -135,23 +135,23 @@ Workplace Admin Setup
 
 * Admin needs to create a custom integration in the Admin Panel of workplace account
 
-[Image: Screen Shot 2019-03-04 at 12.49.51 PM.png]
+ ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/admin_panel.png)
 
 *   Click on the “Create custom integration” button
 
-[Image: Screen Shot 2019-03-04 at 12.50.02 PM.png]
+ ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/create_custom_integration.png)
 
 *  Enter a name for the integration, which will be the name of your chat bot, and click on the “Create” button. You will now be able to configure the permissions of the integration. Enable the “Message any member” permission and click on the “Create access token” button.
 
-[Image: Screen Shot 2019-03-04 at 12.50.50 PM copy.png]
+ ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/integration_setup.png)
 
 *  Copy the access token, enable the “I understand” checkbox and click on the “Done” button
 
-[Image: Screen Shot 2019-03-04 at 12.51.19 PM.png]
+ ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/access_token.png)
 
 Configuring Values for Workplace and Heroku
 
-[Image: Screenshot 2019-09-28 at 5.46.25 PM.png]
+ ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/heroku_config_values.png)
 
 *  Return to the settings page of the Heroku application and paste the access token that you've just copied in the ACCESS_TOKEN value.
 * Copy the App ID and App Secret of the Workplace integration and paste it in the APP_ID and APP_SECRET values
