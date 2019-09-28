@@ -46,9 +46,9 @@ To programmatically access(which the Bot will do) your spreadsheet, you’ll nee
 
 * *Click Enable API. Search for and enable the Google Drive API.*
 
-![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/enable API.png)
+![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/enable_API.png)
 
-![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/enable API 2.png)
+![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/enable_API_2.png)
 
 
 * *Create credentials for a Web Server to access Application Data.*
