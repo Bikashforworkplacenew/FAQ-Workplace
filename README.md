@@ -5,7 +5,7 @@ A sample help bot for Workplace which can act as an online assistant answering q
 What can the bot be used for ? 
 
 * FAQ Bot : Bot that answers frequently asked questions for any product/feature/process
-* Admin Bot : Common asked questions about organisation/company for employees 
+* HR Bot : Common asked questions about organisation/company for employees 
 * Acronym Bot : Can be used as a simple acronym bot used by noobs to help understand the meanings for multiple acronyms or terms used in the company
 * Company quick links : There are multiple portals and docs in a company. Instead of maintaining bookmarks 
 
