@@ -69,10 +69,10 @@ To programmatically access(which the Bot will do) your spreadsheet, you’ll nee
 
 ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/setup_googlesheet.png)
 
-*Index* - # of items in the sheet 
-*Tag - *Quick/easy look up for the user queries 
-*FAQ Question - * User queries for Bot
-*meaning/def/more - *Detailed answer for each query received 
+* Index* - # of items in the sheet 
+* Tag - *Quick/easy look up for the user queries 
+* FAQ Question - * User queries for Bot
+* meaning/def/more - *Detailed answer for each query received 
 
 * *Find the client_email inside client_secret.json. Back in your spreadsheet, click the Share button in the top right, and paste the client email into the People field to give it edit rights. Hit Send.*
 
@@ -82,9 +82,9 @@ To programmatically access(which the Bot will do) your spreadsheet, you’ll nee
 Deployment/Code setup
 
 * Please ensure you have the following setup at your end to run the webhook code at your end 
-    * *You need to run the code in a server : Unix/Linux/Mac OS X 
-    * *Download node installer to install node and npm (node package manager)[https://nodejs.org/en/]
-    * *Install any IDE of your choice to check the code and edit anything required 
+    * You need to run the code in a server : Unix/Linux/Mac OS X 
+    * Download node installer to install node and npm (node package manager)[https://nodejs.org/en/]
+    * Install any IDE of your choice to check the code and edit anything required 
 
 * The project has 3 files which we needs to be modified/changed according to your needs [You can always deploy the project as it is without changing too]
     * *client_secret.json(HelpBot-Workplace/utilities/client_secret.json)[*Mandatory*]*
