@@ -67,7 +67,7 @@ To programmatically access(which the Bot will do) your spreadsheet, you’ll nee
 * *Create a new google sheet and enter the queries/answers*
 
 
-![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/setup_googlesheet.png)
+![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/setup_googlesheet_2.png)
 
 * Index* - # of items in the sheet 
 * Tag - *Quick/easy look up for the user queries 
