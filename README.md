@@ -13,7 +13,7 @@ How does it work ?
 ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/helpbut_setup.png)
 
 
-* Workplace Admin updates the google sheet with all the necessary information. The sheet can be accessed and updated by anyone (irrespective of their work background)
+* Workplace Admin updates the google sheet with all the necessary information. The sheet can be accessed and updated by anyone with the correct permission as assigned by the organisation (irrespective of their work background)
 * Workplace user queries the bot(@Help) for information about any specific topic
 * @Help Bot  queries the sheets and replies back to the user
 * In case a query made to the bot is absent in the sheets then the @help bot pings the admin with the unavailable query to update the sheet
