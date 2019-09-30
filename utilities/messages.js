@@ -72,7 +72,7 @@ module.exports = function (graph_api) {
 
         //Welcome message for user
         if (incoming_message.includes("Hey") || incoming_message.includes("Hello") || incoming_message.includes("Hi")) {
-            this._sendMessage(senderID, "Hello !! I am the Help Bot. Please type any term that you dont know off and I can help you get more information on it :) ");
+            this._sendMessage(senderID, "Hello !! I am the FAQ Bot. Please type any term that you dont know off and I can help you get more information on it :) ");
 
         } else if (incoming_message.length > 0) {
 
