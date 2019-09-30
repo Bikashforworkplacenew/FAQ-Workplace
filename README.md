@@ -81,7 +81,10 @@ To programmatically access(which the Bot will do) your spreadsheet, you’ll nee
 
 Deployment/Code setup
 
-* The code can be found here : https://github.com/Bikashforworkplacenew/HelpBot-Workplace
+* Please ensure you have the following setup at your end to run the webhook code at your end 
+    * *You need to run the code in a server : Unix/Linux/Mac OS X 
+    * *Download node installer to install node and npm (node package manager)[https://nodejs.org/en/]
+    * *Install any IDE of your choice to check the code and edit anything required 
 
 * The project has 3 files which we needs to be modified/changed according to your needs [You can always deploy the project as it is without changing too]
     * *client_secret.json(HelpBot-Workplace/utilities/client_secret.json)[*Mandatory*]*
