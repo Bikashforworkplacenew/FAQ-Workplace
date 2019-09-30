@@ -21,7 +21,7 @@ var found_word="";
 require('dotenv').config(); //Configuration values like workplace ID, Google Sheet details
 
 
-//Variable declaration for getting all the value from the config value
+//Variable declaration for getting all the value from the config value again
 
 var doc = new GoogleSpreadsheet(process.env.Google_sheet_bot_queries);
 var newquerydoc = new GoogleSpreadsheet(process.env.Google_sheet_new_queries);
