@@ -80,6 +80,8 @@ To programmatically access(which the Bot will do) your spreadsheet, you’ll nee
 
 * *Find the client_email inside client_secret.json. Back in your spreadsheet, click the Share button in the top right, and paste the client email into the People field to give it edit rights. Hit Send.*
 
+
+
 ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/share_sheet.png)
 
 
