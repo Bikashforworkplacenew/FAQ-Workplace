@@ -11,7 +11,7 @@ What can the bot be used for ?
 
 How does it work ? 
 
-![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/helpbut_setup.png)
+![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/helpbut_setup.png)
 
 
 * Workplace Admin updates the google sheet with all the necessary information. The sheet can be accessed and updated by anyone with the correct permission as assigned by the organisation (irrespective of their work background)
@@ -43,35 +43,35 @@ To programmatically access(which the Bot will do) your spreadsheet, you’ll nee
 * *Go to the Google APIs Console (https://console.developers.google.com/)*
 * *Create a new project*
 
-![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/create_project.png)
+![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/create_project.png)
 
 
 
 * *Click Enable API. Search for and enable the Google Drive API.*
 
-![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/enable_API.png)
+![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/enable_API.png)
 
-![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/enable_API_2.png)
+![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/enable_API_2.png)
 
 
 * *Create credentials for a Web Server to access Application Data.*
 
-![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/choose_webserver.png)
+![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/choose_webserver.png)
 
 * *Name the service account and grant it a Project Role of Editor.*
 
-![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/account_key_setup.png)
+![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/account_key_setup.png)
 
 * *Download the JSON file.*
 
 
-![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/save_key.png)
+![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/save_key.png)
 
 * *Copy the JSON file to your code directory and rename it to client_secret.json*
 * *Create a new google sheet and enter the queries/answers*
 
 
-![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/setup_googlesheet_2.png)
+![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/setup_googlesheet_2.png)
 
 * Index* - # of items in the sheet 
 * Tag - *Quick/easy look up for the user queries 
@@ -80,7 +80,7 @@ To programmatically access(which the Bot will do) your spreadsheet, you’ll nee
 
 * *Find the client_email inside client_secret.json. Back in your spreadsheet, click the Share button in the top right, and paste the client email into the People field to give it edit rights. Hit Send.*
 
-![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/share_sheet.png)
+![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/share_sheet.png)
 
 
 Deployment/Code setup
@@ -111,17 +111,17 @@ Google_sheet_new_queries_link =    https://docs.google.com/spreadsheets/d/[Googl
 
 e.g. in here the column names (“meaning”,“def”) is same as the ones being extracted in the code
 
- ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/botqueries_column.png)
- ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/column_code.png)
+ ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/botqueries_column.png)
+ ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/column_code.png)
         
         * You can add your own welcome message 
 
- ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/intro_mesage.png)
+ ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/intro_mesage.png)
 
         * Add the necessary - User friendliness checks 
 
 
- ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/aesthetic_check.png)
+ ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/aesthetic_check.png)
 
         * Add your own custom admin message in case any query from the sender is not found 
 * After making the changes you can deploy the code in your server 
@@ -131,17 +131,17 @@ e.g. in here the column names (“meaning”,“def”) is same as the ones bein
     * You can create a new app in Heroku
     
 
- ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/heroku_newapp.png)
+ ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/heroku_newapp.png)
 
 
 * As my code is pushed to Github, i am choosing github account project 
 
- ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/connect_github.png)
+ ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/connect_github.png)
 
 
 * Make sure you “Enable Automatic Deploys” after deploying branch
 
- ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/auto_deploy.png)
+ ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/auto_deploy.png)
 
 * There is one final step that you need to do which we will complete after the Workplace Setup 
 
@@ -149,23 +149,23 @@ Workplace Admin Setup
 
 * Admin needs to create a custom integration in the Admin Panel of workplace account
 
- ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/admin_panel.png)
+ ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/admin_panel.png)
 
 *   Click on the “Create custom integration” button
 
- ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/create_custom_integration.png)
+ ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/create_custom_integration.png)
 
 *  Enter a name for the integration, which will be the name of your chat bot, and click on the “Create” button. You will now be able to configure the permissions of the integration. Enable the “Message any member” permission and click on the “Create access token” button.
 
- ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/integration_setup.png)
+ ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/integration_setup.png)
 
 *  Copy the access token, enable the “I understand” checkbox and click on the “Done” button
 
- ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/access_token.png)
+ ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/access_token.png)
 
 Configuring Values for Workplace and Heroku
 
- ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/heroku_config_values.png)
+ ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/heroku_config_values.png)
 
 *  Return to the settings page of the Heroku application and paste the access token that you've just copied in the ACCESS_TOKEN value.
 * Copy the App ID and App Secret of the Workplace integration and paste it in the APP_ID and APP_SECRET values
