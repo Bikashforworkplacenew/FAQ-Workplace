@@ -19,7 +19,7 @@ How does it work ?
 * FAQ-Workplace Bot  queries the sheets and replies back to the user
 * In case a query made to the bot is absent in the sheets then the @help bot pings the admin with the unavailable query to update the sheet
 
-HelpBot Demo.mov (https://quip.com/2/blob/VfHAAAaErCb/rGqU48PHn17c-Q7fZ54e0Q?name=HelpBot%20Demo.mov) 
+* You can check the experience of the bot in this video :
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/oTCV1P2NAdw/0.jpg)](https://www.youtube.com/watch?v=oTCV1P2NAdw)
 
