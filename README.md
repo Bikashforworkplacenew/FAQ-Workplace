@@ -21,6 +21,9 @@ How does it work ?
 
 HelpBot Demo.mov (https://quip.com/2/blob/VfHAAAaErCb/rGqU48PHn17c-Q7fZ54e0Q?name=HelpBot%20Demo.mov) 
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/oTCV1P2NAdw/0.jpg)](https://www.youtube.com/watch?v=oTCV1P2NAdw)
+
+
 
 How to deploy FAQ-Workplace Bot to your workplace?
 
