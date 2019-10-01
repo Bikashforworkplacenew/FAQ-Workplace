@@ -90,10 +90,10 @@ Deployment/Code setup
     * Download node installer to install node and npm (node package manager)[https://nodejs.org/en/]
     * Install any IDE of your choice to check the code and edit anything required 
 
-* The project has 3 files which we needs to be modified/changed according to your needs [You can always deploy the project as it is without changing too]
-    * *client_secret.json(HelpBot-Workplace/utilities/client_secret.json)[*Mandatory*]*
+* The project has 3 files which we needs to be modified/changed according to your needs 
+    * *client_secret.json(FAQ-Workplace/utilities/client_secret.json)[*Mandatory*]*
         * You need to replace the client_secret.json in the project with the one that you saved in the previous step
-    * *.env(HelpBot-Workplace/.env)[*Mandatory*]* 
+    * *.env(FAQ-Workplace/.env)[*Mandatory*]* 
         * Please modify/add the necessary details to this file
         * This is your config file which can be edited at any point of time 
         * It contains the google sheet ID/ google sheet links and Workplace_Admin_ID
@@ -102,7 +102,7 @@ Deployment/Code setup
         
         ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/environment_variable.png)
         
-    * *messages.js (HelpBot-Workplace/utilities/messages.js)[*OPTIONAL*]*
+    * *messages.js (FAQ-Workplace/utilities/messages.js)[*OPTIONAL*]*
         * Most Important : Make sure to get the columns names right from the spreadsheet set up 
 
 e.g. in here the column names (“meaning”,“def”) is same as the ones being extracted in the code
