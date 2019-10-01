@@ -1,5 +1,5 @@
 # FAQ-Workplace Bot
-A sample FAQ bot for Workplace which can act as an online assistant answering questions it is asked by simply querying from a google or office 365 Spread sheet. 
+A sample FAQ bot for Workplace which can act as an online assistant answering questions it is asked by simply querying from a google sheet. 
 
 
 What can the bot be used for ? 
@@ -7,6 +7,7 @@ What can the bot be used for ?
 * FAQ Bot : Bot that answers frequently asked questions for any product/feature/process
 * HR Bot : Common asked questions about organisation/company for employees 
 * Acronym Bot : Can be used as a simple acronym bot used by noobs to help understand the meanings for multiple acronyms or terms used in the company
+* You can also extend this to add other spreadhseet services such as office 365
 
 How does it work ? 
 
