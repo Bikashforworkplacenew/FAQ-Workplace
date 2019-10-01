@@ -186,10 +186,12 @@ Configuring Values for Workplace and Heroku
     * SERVER_URL: https://[name of your Heroku application].herokuapp.com/ (https://herokuapplicationname.herokuapp.com/webhook)
     * VERIFY_TOKEN: [Enter the same token specified above]
 
-
-
 *  Return to the integration configuration in Workplace, scroll all the way down and click on the “Save” button.
      When you click on the “Save” button, you should return to the main custom integrations page
+     
+* When you open app in Heroku, you might see an application error on your screen. Please ignore that and click on "View logs" under the more button.
+  
+ ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/heroku_logs.png)
     
 * Verify that the Workplace Chat bot is working
 
