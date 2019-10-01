@@ -173,11 +173,11 @@ Configuring Values for Workplace and Heroku
     
 * Callback URL: https://[name of your Heroku application].herokuapp.com/webhook (https://herokuapplicationname.herokuapp.com/webhook)
     * The name of the Heroku application can be found by clicking on the “Open app” button in the Heroku application. This will then open a new tab where the name of the application will be the first part of the url (e.g. https://wp-helpbot.herokuapp.com/ (https://wpsamples-hellobot.herokuapp.com/) will become https://wp-helpbot.herokuapp.com/webhook)
-    * Verify Token: workplacesample
+    * Verify Token: [Enter a token of your choice]
     *  Return to the Heroku settings page and fill out the remaining values as followed
         
     * SERVER_URL: https://[name of your Heroku application].herokuapp.com/ (https://herokuapplicationname.herokuapp.com/webhook)
-    * VERIFY_TOKEN: workplacesample
+    * VERIFY_TOKEN: [Enter the same token specified above]
 
 
 
