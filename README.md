@@ -163,6 +163,9 @@ Workplace Admin Setup
 
  ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/access_token.png)
 
+
+
+
 Configuring Values for Workplace and Heroku
 
  ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/heroku_config_values.png)
