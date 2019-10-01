@@ -17,7 +17,7 @@ How does it work ?
 * Workplace Admin updates the google sheet with all the necessary information. The sheet can be accessed and updated by anyone with the correct permission as assigned by the organisation (irrespective of their work background)
 * Workplace user queries the bot(FAQ bot) for information about any specific topic
 * FAQ-Workplace Bot  queries the sheets and replies back to the user
-* In case a query made to the bot is absent in the sheets then the @help bot pings the admin with the unavailable query to update the sheet
+* In case a query made to the bot is absent in the sheets then the FAQ-Workplace Bot pings the admin with the unavailable query to update the sheet
 
 * You can check the experience of the bot in this video :
 
