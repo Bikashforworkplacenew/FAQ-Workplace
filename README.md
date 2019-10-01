@@ -157,7 +157,9 @@ Workplace Admin Setup
 
 *  Enter a name for the integration, which will be the name of your chat bot, and click on the “Create” button. You will now be able to configure the permissions of the integration. Enable the “Message any member” permission and click on the “Create access token” button.
 
+ 
  ![alt text](https://github.com/Bikashforworkplacenew/FAQ-Workplace/blob/master/images/integration_setup.png)
+ 
 
 *  Copy the access token, enable the “I understand” checkbox and click on the “Done” button
 
