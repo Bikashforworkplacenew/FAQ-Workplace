@@ -76,7 +76,7 @@ module.exports = function (graph_api) {
 
         } else if (incoming_message.length > 0) {
 
-            //Aesthetics check for "message too short"
+            //- User friendliness  check for "message too short"
             if (incoming_message.length < 3) {
 
                 this._sendMessage(senderID, "Sorry your message is too short for me to understand , please ensure input message should at least be 3 or more letters");
