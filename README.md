@@ -108,13 +108,15 @@ e.g. in here the column names (“meaning”,“def”) is same as the ones bein
 
  ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/intro_mesage.png)
 
-        * Add the necessary aesthetics checks 
+        * Add the necessary - User friendliness checks 
 
 
  ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/aesthetic_check.png)
 
         * Add your own custom admin message in case any query from the sender is not found 
-* After making the changes you can deploy the code in any web server 
+* After making the changes you can deploy the code in your server 
+* PLEASE NOTE : The Webhook should be hosted in a server which is under your control for security purposes. Hosting the code in any 3rd party/Partner server is strictly prohibited.
+* If you want to test the feature on your end , you can use Heroku account(which gives a free account) to host the webhook. [It should not be used for Production instances]
 * In this example I have used Heroku to deploy my code and make all the configuration 
     * You can create a new app in Heroku
     
