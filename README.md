@@ -93,6 +93,8 @@ Deployment/Code setup
         * Please modify/add the necessary details to this file
         * This is your config file which can be edited at any point of time 
         * It contains the google sheet ID/ google sheet links and Workplace_Admin_ID
+        * The spreadsheet ID is the long key in the URL of the spreadsheet when you view it
+        * The workplace Admin ID can be copied from the URL of the Workplace Admin Profile page
         
         ![alt text](https://github.com/Bikashforworkplacenew/HelpBot-Workplace/blob/master/images/environment_variable.png)
         
